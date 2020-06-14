@@ -11,5 +11,8 @@ An application made to help track a set term(quarter, semesters, etc) for a stud
   - Recycler View
   - Broadcast receiver(for push notification)
 
-![Image of Term View](https://raw.githubusercontent.com/hpca01/SchoolTracker/master/preview/term_view_populated.png){:height="100px" width="50px"}
+### Term View
+- Quickly view each term and # of courses as well as data for current progress in each of the courses
+- Long press to edit, short press to go to details
 
+<img src="https://raw.githubusercontent.com/hpca01/SchoolTracker/master/preview/term_view_populated.png" height="400" width="200">
