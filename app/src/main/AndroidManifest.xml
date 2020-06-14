@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schooltracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_class_black_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_class_black_24dp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <receiver android:name=".GoalAlertReceiver" android:exported="true"/>
+
+        <activity android:name=".CourseAddMentor" />
+        <activity android:name=".NewMentor" />
+        <activity android:name=".NewNote" />
+        <activity android:name=".NewAssessment" />
+        <activity
+            android:name=".CourseDetails"
+            android:label="Course Detail" />
+        <activity
+            android:name=".NewCourse"
+            android:label="New Course"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".EditCourse"
+            android:label="Edit Course"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MentorsView"
+            android:label="Mentors"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".TermDetails"
+            android:label="Term Details" />
+        <activity
+            android:name=".NewTerm"
+            android:label="New Term"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".EditTerm"
+            android:label="Edit Term"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".TermsView"
+            android:label="Terms" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

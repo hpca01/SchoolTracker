@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="newMentorVM"
+            type="com.example.schooltracker.ui.NewMentorViewModel" />
+        <variable
+            name="handler"
+            type="com.example.schooltracker.NewMentor" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewMentor">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="301dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/mentor_name"
+            android:inputType="textPersonName"
+            android:text="@={newMentorVM.name}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="302dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/mentor_email"
+            android:inputType="textEmailAddress"
+            android:text="@={newMentorVM.email}"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="303dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/mentor_phone"
+            android:inputType="phone"
+            android:text="@={newMentorVM.phoneNumber}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+        <Button
+            android:id="@+id/save_mentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:onClick="@{()->handler.validateForm()}"
+            android:text="@string/save_mentor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

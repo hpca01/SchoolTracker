@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCourse">
+
+    <EditText
+        android:id="@+id/courseTitle"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/course_title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/courseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="@string/start_date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/courseTitle"
+        app:layout_constraintTop_toTopOf="@+id/courseTitle" />
+
+    <EditText
+        android:id="@+id/courseEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:hint="@string/end_date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/courseStart"
+        app:layout_constraintTop_toBottomOf="@+id/courseStart" />
+
+
+    <Switch
+        android:id="@+id/courseAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/alert_me"
+        app:layout_constraintEnd_toStartOf="@+id/courseEnd"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitle" />
+
+    <RadioGroup
+        android:id="@+id/statusRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseAlert"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <RadioButton
+            android:id="@+id/coursePlanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/planned" />
+
+        <RadioButton
+            android:id="@+id/courseInProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/in_progress" />
+
+        <RadioButton
+            android:id="@+id/courseCompleted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/completed" />
+
+        <RadioButton
+            android:id="@+id/courseDropped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dropped" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/save_course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusRadioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

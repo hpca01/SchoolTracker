@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="30sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/recyclerBackground">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

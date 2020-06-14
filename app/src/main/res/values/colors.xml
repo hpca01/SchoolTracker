@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+
+    <color name="coursePlanned">#E0E4B1</color>
+    <color name="courseCompleted">#4CAF50</color>
+    <color name="courseInProgress">#FFEB3B</color>
+    <color name="courseDropped">#E45C51</color>
+
+    <color name="recyclerBackground">#E0E0E0</color>
+    <color name="notesRecyclerItem">#EDE7F6</color>
+    <color name="assessmentRecyclerBg">#EFEBE9</color>
+</resources>

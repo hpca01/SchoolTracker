@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SchoolTracker</string>
+
+    <!--Main screen resources-->
+    <string name="school_tracker">School Tracker</string>
+    <string name="terms">Terms</string>
+    <string name="mentors">Mentors</string>
+
+    <!--Terms view-->
+    <string name="add_term">Add Term</string>
+    <string name="save_term">Save Term</string>
+    <string name="terms_view">Terms View</string>
+    <string name="planned">Planned</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+    <string name="dropped">Dropped</string>
+    <!--    new term view-->
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="term_title">Term Title</string>
+    <string name="alert_me">Alert Me</string>
+
+    <!--    term detail view-->
+    <string name="add_course">Add Course</string>
+    <string name="status">Status</string>
+    <string name="no_courses_for_this_term">No courses for this term</string>
+    <string name="edit_term">Edit Term</string>
+
+    <!--    mentor screen-->
+    <string name="add_mentor">Mentor(s)</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+
+    <!--course screen-->
+    <string name="save_course">Save Course</string>
+    <string name="course_title">Course Title</string>
+    <string name="mentor_name">Mentor Name</string>
+    <string name="mentor_email">Mentor Email</string>
+    <string name="notes">Notes</string>
+    <string name="assessments">Assessments</string>
+    <string name="save_mentor">Save Mentor</string>
+    <string name="mentor_phone">Mentor Phone</string>
+<!-- new    assessment screen-->
+    <string name="performance">Performance</string>
+    <string name="objective">Objective</string>
+    <string name="save_assessment">Save Assessment</string>
+
+<!--    course detail menu-->
+    <string name="add_assessment">Add Assessment</string>
+    <string name="add_note">Add Note</string>
+<!--    notes screen-->
+    <string name="save_note">Save Note</string>
+<!--    mentors for course add screen-->
+    <string name="save_mentors">Save Mentors</string>
+    <string name="share_course">Share Course</string>
+    <string name="assessment_title">Assessment Title</string>
+
+
+</resources>
